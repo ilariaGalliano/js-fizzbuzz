@@ -1,0 +1,18 @@
+/* General */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Body */
+body{
+  margin-top: 30px;
+  height: 100vh;
+  background: linear-gradient(100deg,goldenrod,green);
+  text-align: center;
+}
+ul{
+  padding: 20px;
+  list-style: none;
+}
