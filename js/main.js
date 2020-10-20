@@ -8,7 +8,7 @@
 var number = 0;
 var list = ''
 
-// CICLO FOR
+// Ciclo For:
 //per i multipli di 3 stampi "Fizz" al posto del numero
 //per i multipli di 5 stampi "Buzz"
 //per i numeri che sono sia multipli di 3 che di 5 stampi "FizzBuzz".
@@ -27,6 +27,41 @@ for (var i = 0; i < 100; i++) {
         text.innerHTML = list += '<li>' + number + '</li>';
       }
 }
+
+// Ciclo While:
+while (number < 100 ) {
+  number++
+  if ( ( number % 3 == 0 ) && ( number % 5 !== 0 ) ) {
+    text.innerHTML = list += '<li>' + 'Fizz' + '</li>'
+  }
+  else if ( ( number % 5 == 0 ) && ( number % 3 !== 0 ) )  {
+    text.innerHTML = list += '<li>' + 'Buzz' + '</li>';
+  }
+  else if ( ( number % 3 == 0 ) && ( number % 5 == 0 ) )  {
+    text.innerHTML = list += '<li>' + 'FizzBuzz' + '</li>';
+  }
+  else {
+    text.innerHTML = list += '<li>' + number + '</li>';
+  }
+}
+
+// Ciclo Do-While:
+do {
+  number ++
+
+  if ( ( number % 3 == 0 ) && ( number % 5 !== 0 ) ) {
+    text.innerHTML = list += '<li>' + 'Fizz' + '</li>'
+  }
+  else if ( ( number % 5 == 0 ) && ( number % 3 !== 0 ) )  {
+    text.innerHTML = list += '<li>' + 'Buzz' + '</li>';
+  }
+  else if ( ( number % 3 == 0 ) && ( number % 5 == 0 ) )  {
+    text.innerHTML = list += '<li>' + 'FizzBuzz' + '</li>';
+  }
+  else {
+    text.innerHTML = list += '<li>' + number + '</li>';
+  }
+} while (number < 100);
 
 // Risultato
 var result = document.getElementById('text')
